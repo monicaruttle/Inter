@@ -1,8 +1,8 @@
 # Internet of Things
 SYSC 4001 Operating Systems, Fall 2015
 Programming Assignment 1: Emulation of Internet of Things (IoT) Using Software Processes
-Monica Ruttle, 100933702
-Bronwyn Skelley, 100880052
+Monica Ruttle
+Bronwyn Skelley
 
 Assignment 1 contains four c files and one header file. The files include cloud.c, controller.c, sensor.c, actuator.c and iotinfo.h.
 
@@ -19,3 +19,5 @@ Subsequently, every 2 seconds, the sensor will send random data to the controlle
 For every actuator that is executed, a sensor must be executed immediately after. If more than one of these pairs would like to be run, repeat the starting process for the actuator and sensor as many times as required.
 
 After forty iterations of the child process loop, the child will kill the parent process. It will also send a STOP signal to the actuators and the sensons, which will terminate those as well. The cloud remains running as logically, a controller should not be able to end a cloud process.
+
+[1] Matthew, Neil, and Richard Stones. Beginning Linux Programming. 4th ed. Birmingham, UK: Wrox, 2007. Print.
